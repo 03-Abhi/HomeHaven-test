@@ -14,6 +14,11 @@ app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
+// Route to show server status on a webpage
+app.get("/", (req, res) => {
+  res.send("<h1>Server is running!</h1>");
+});
+
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
