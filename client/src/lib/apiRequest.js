@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiRequest = axios.create({
-  baseURL: "https://home-haven-backend.vercel.app",
+  baseURL: "https://homehaven-test.onrender.com",
   withCredentials: true,
 });
 
