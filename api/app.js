@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import dotenv from "dotenv";
 import authRoute from "./routes/auth.route.js";
 import postRoute from "./routes/post.route.js";
 import testRoute from "./routes/test.route.js";
@@ -10,7 +9,6 @@ import chatRoute from "./routes/chat.route.js";
 import messageRoute from "./routes/message.route.js";
 
 // Load environment variables from .env file
-// dotenv.config();
 
 const app = express();
 
